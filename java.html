@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>java notes</title>
+    <style>
+    body{
+        background-color:beige;
+        color: black;
+        font-size: 20px;
+        position: relative;
+    }   
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px ;
+    }
+    div{
+        color: blue;
+    }
+    span{
+        color: green;
+    }
+    img{
+        height: 500px;
+        width: 1000px;
+        display: flex;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .table{
+        width: 500px;
+        height: 300px;
+    }
+    .exam{
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+        background-color: grey;
+        font-size: 24px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+
+        <body>
+         <header><h1>java notes</h1></header>
+         <h2>Introduction</h2>
+         <p>Java refers to a number of computer software products and specifications from Sun Microsystems
+            (the Java™ technology) that together provide a system for developing and deploying cross-platform
+            applications.</p>
+            <h2>OOP  Object Oriented Programming</h2>
+            <p>When speaking about OOP one has to mention:</p>
+            <ul>
+                <li>Inheritance
+                    </li>
+                <li>Modularity
+                    </li>
+                <li>Polymorphism
+                    </li>
+                <li>Encapsulation (binding code and its data)</li>
+            </ul>
+            <h3>Data Abstraction</h3>
+            <p>Humans manage
+                complexity through abstraction. For example, people do not think of a car as a set ofte ns of
+                thousands of individual parts. They think of it as a well-defined object with its own unique
+                behavior. This abstraction allows people to use a car to drive to the grocery store without being
+                overwhelmed by the complexity of the parts that form the car. They can ignore the details of how
+                the engine, transmission, and braking systems work. Instead they are free to utilize the object as
+                a whole.
+                A powerful way to manage abstraction is through the use of hierarchical classifications.
+                This allows you to layer the semantics of complex systems, breaking them into more manageable
+                pieces. From the outside, the car is a single object.</p>
+                <h3>Encapsulation</h3>
+                <p>An object encapsulates the methods and data that are contained inside it .the rest of the system
+                    interacts with an object only through a well defined set of services that it provides</p>
+                 <img src="Screenshot1.png">
+                 <img src="Screenshot2.png">
+                 <img src="Screenshot3.png">
+                 <img src="Screenshot4.png">
+            
+                <h2>CLASSES AND OBJECTS</h2>
+                <h3>Concepts of classes and objects:</h3>
+                <p> a class is a template for an object, and an object is an instance of a class. Because
+                    an object is an instance of a class, you will often see the two words object and instance used
+                    interchangeably</p>
+                    <h3>The General Form of a Class</h3>
+                    <p>When you define a class, you declare its exact form and nature. You do this by specifying
+                        the data that it contains and the code that operates on that data.
+                        A class is declared by use of the class keyword. The classes that have been used up to
+                        this point are actually very limited examples of its complete form. Classes can (and usually do)
+                        get much more complex. The general form of a class definition is shown here:</p>
+                         <div>class classname { <br>
+                            type instance- <br>
+                            variable1; type <br>
+                            instance-variable2; <span>// ... </span><br>
+                            type instance-variableN; <br>
+                            type methodname1(parameter-list) { <br>
+                            <span>// body of method </span><br>
+                            }<br>
+                            type methodname2(parameter-list) {<br>
+                            <span>// body of method</span><br>
+                            }<br>
+                            <span>// ...</span><br>
+                            type methodnameN(parameter-list) {<br>
+                            <span>// body of method</span><br>
+                            }<br>
+                        }<br></div>
+                        <p>
+                            The data, or variables, defined within a class are called instance variables. The code is
+                            contained within methods. Collectively, the methods and variables defined within a class are
+                            called members of the class. In most classes, the instance variables are acted upon and accessed
+                            by the methods defined for that class. Thus, it is the methods that de can be used.</p>
+                            <h3>Declaring Objects</h3>
+                            <div>Ex: Box mybox = new Box();<br>
+                            Box mybox; <span>// declare reference to object</span> <br>
+                            mybox = new Box(); <span>// allocate a Box object</span> <br></div>
+                            <h3>My first Java program</h3>
+                            <p>public class Example1{</p>
+                                <div>public static void main (String args []) {
+   System.out.println ("My first Java program"); <br>
+}} <br></div>
+<h2>Variables and Data Types</h2>
+<h3>Variables</h3>
+<p>A variable is a place where the program stores data temporarily. As the name implies the value
+stored in such a location can be changed while a program is executing (compare with constant).</p>
+class Example2 { <br>
+                                <div>    public static void main(String args[]) { <br>
+                                        int var1; <span>// this declares a variable </span><br>
+                                        int var2; <span>// this declares another variable </span><br>
+                                        var1 = 1024; <span>// this assigns 1024 to var1</span> <br>
+                                        System.out.println("var1 contains " + var1); <br>
+                                        var2 = var1 / 2; <br>
+                                        System.out.print("var2 contains var1 / 2: "); <br>
+                                        System.out.println(var2); <br>
+                                        } <br>
+                                        } <br> </div>
+                                        <p>Predicted Output:</p>
+                                        <p>var2 contains var1 / 2: 512</p>
+                                        <h2>Mathematical Operators</h2>
+                                        <img class="table" src="table.png">
+                                        <h3>Logical Operators</h3>
+                                        <img class="table" src="tableTwo.png">
+                                        class Example5 { <br>
+                                           <div> public static void main(String args[]) { <br>
+                                            int n, d; <br>
+                                            n = 10; <br>
+                                            d = 2; <br>
+                                            if(d != 0 && (n % d) == 0) <br>
+                                            System.out.println(d + " is a factor of " + n); <br>
+                                            d = 0; <span>// now, set d to zero</span> <br>
+                                            <span>// Since d is zero, the second operand is not evaluated. </span><br>
+                                            if(d != 0 && (n % d) == 0) <br>
+                                            System.out.println(d + " is a factor of " + n); <br> 
+                                            <span>/* Now, try same thing without short-circuit operator. <br>
+                                                This will cause a divide-by-zero error. <br>
+                                                */</span> <br>
+                                            if(d != 0 & (n % d) == 0) <br>
+                                            System.out.println(d + " is a factor of " + n); <br>
+                                            } <br>
+                                        } <br> </div>
+                                        <p>Predicted Output: <br>
+                                            *Note if you try to execute the above program you will get an error (division by zero). To be able to
+                                            execute it, first comment the last two statements, compile and then execute.
+                                            2 is a factor of 10</p>
+                                            <h3>Character Escape Codes</h3>
+                                            <img class="table" src="tableThree.png">
+                                            class Example6 { <br>
+                                            <div>    public static void main(String args[]) { <br>
+                                                System.out.println("First line\nSecond line"); <br>
+                                                System.out.println("A\tB\tC"); <br>
+                                                System.out.println("D\tE\tF") ; <br>
+                                                } <br>
+                                                } <br></div>
+                                                <p>Predicted Output: <br>
+                                                    <b>First Line</b> <br>
+                                                    <b>Second Line</b> <br>
+                                                    <b>A B C</b> <br>
+                                                   <b> D E F</b></p>
+                                                    <h2>Data Types</h2>
+                                                    <img class="table" src="tableFOUR.png" > <br>
+                                                    class Example8 { <br>
+                                                    <div>    public static void main(String args[]) { <br>
+                                                        int var; <span>// this declares an int variable </span><br>
+                                                        double x; <span>// this declares a floating-point variable</span> <br>
+                                                        var = 10; <span>// assign var the value 10</span> <br>
+                                                        x = 10.0; <span>// assign x the value 10.0</span> <br>
+                                                        System.out.println("Original value of var: " + var); <br>
+                                                        System.out.println("Original value of x: " + x); <br>
+                                                        System.out.println(); <span>// print a blank line </span><br>
+                                                        <span>// now, divide both by 4</span> <br >
+                             var = var / 4; <br>
+                          x = x / 4;<br>
+     System.out.println("var after division: " + var);<br>
+   System.out.println("x after division: " + x);<br>
+ } <br>
+} <br></div>
+<p>Predicted output: <br>
+    <b>Original value of var: 10 </b><br>
+    <b>Original value of x: 10.0</b> <br>
+    <b>var after division: 2</b> <br>
+    <b>x after division: 2.5</b></p>
+    <p>The Boolean data type can be either TRUE or FALSE. It can be useful when controlling flow of a
+        program by assigning the Boolean data type to variables which function as flags. Thus program flow
+        would depend on the condition of these variables at the particular instance. Remember that the
+        output of a condition is always Boolean</p>
+class Example10 { <br>
+    <div>
+public static void main(String args[]) { <br>
+boolean b; <br>
+b = false; <br>
+System.out.println("b is " + b); <br>
+b = true; <br>
+System.out.println("b is " + b); <br>
+<span>// a boolean value can control the if statement </span><br>
+if(b) System.out.println("This is executed."); <br>
+b = false; <br>
+if(b) System.out.println("This is not executed."); <br>
+<span>// outcome of a relational operator is a boolean value</span> <br>
+System.out.println("10 > 9 is " + (10 > 9)); <br> </div>
+<p>Predicted output: <br>
+    <b>b is false</b> <br>
+   <b> b is true</b> <br>
+    <b>This is executed </b><br>
+    <b>10 > 9 is true</b></p>
+<h2>Introducing Control Statements</h2>
+<p>Introducing Control Statements</p>
+class Example11 { <br>
+    <div>
+    public static void main(String args[]) { <br>
+    int a,b,c; <br>
+    a = 2; <br>
+    b = 3; <br>
+    c = a - b; <br>
+    if (c >= 0) System.out.println("c is a positive number"); <br>
+    if (c < 0) System.out.println("c is a negative number"); <br> 
+    System.out.println(); <br>
+    c = b - a; <br>
+    if (c >= 0) System.out.println("c is a positive number"); <br>
+    if (c < 0) System.out.println("c is a negative number"); <br>
+    } <br>
+    } <br></div>
+    <p>Predicted output: <br> 
+        <b>c is a negative number </b><br>
+        <b>c is a positive number</b></p>
+<p>The ‘if’ statement evaluates a condition and if the result is true, then the following statement/s are
+    executed, else they are just skipped (refer to program output). The line System.out.println() simply
+    inserts a blank line. Conditions use the following comparison operators:</p>
+<img class="table" src="table5.png">
+class Example12 { <br>
+    <div>
+    public static void main(String args[]) { <br>
+    int count; <br>
+    for(count = 0; count < 5; count = count+1) <br>
+    System.out.println("This is count: " + count); <br>
+    System.out.println("Done!"); <br>
+    } <br> 
+    } <br> </div>
+<p>Predicted Output: <br>
+    <b>This is count: 0 </b><br>
+    <b>This is count: 1</b> <br>
+    <b>This is count: 2 </b><br>
+    <b>This is count: 3</b> <br>
+    <b>This is count: 4</b> <br>
+    <b>Done!</b></p>
+<img class="table" src="table6.png" > <br>
+<h2>Scope and Lifetime of Variables</h2>
+<p>The following simple programs, illustrate how to avoid programming errors by taking care where to
+    initialize variables depending on the scope.</p>
+    class Example16 { <br>
+        <div>
+        public static void main(String args[]) { <br>
+        int x; // known to all code within main <br>
+        x = 10; <br>
+        if(x == 10) { <span>// start new scope</span> <br>
+        int y = 20; <span>// known only to this block </span><br>
+        <span>// x and y both known here.</span> <br>
+        System.out.println("x and y: " + x + " " + y); <br>
+        x = y * 2; <br>
+        } <br>
+        <span>// y = 100; // Error! y not known here </span><br>
+        <span>// x is still known here.</span> <br>
+        System.out.println("x is " + x); <br>
+    } } <br> </div>
+<p>Predicted Output: <br>
+    <b>x and y: 10 20</b> <br>
+    <b>x is 40</b></p>
+<button><h2>Part 2 - Advanced Java Programming</h2></button>
+<button class="exam"><h3><a href="javaExam.html">exam for this part</a></h3></button>
+
+            <script>
+              
+            </script>
+        </body>
+</html>

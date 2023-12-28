@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>java exit exam</title>
+    <style>
+      body {
+        position: relative;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+       
+    }
+
+    .input1 {
+        position: absolute;
+        padding: 8px;
+        width: 100px;
+        
+        top: 10px;
+        left:125px; 
+        
+    }
+    .input2 {
+        position: absolute;
+        padding: 8px;
+        width: 100px;
+        margin: 5px;
+        top: 50px;
+        left:120px; 
+    }
+
+    button {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #result {
+        position: absolute;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: white;
+        bottom: 200px;
+        font-weight: bold;
+        color: rgb(8, 8, 8);
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    .name{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 18px;
+        position: absolute;
+        width: 100px;
+        margin: 20px;
+        top: 0px;
+        left:30px;
+    }
+    .department{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        position: absolute;
+        width: 100px;
+        margin: 20px;
+        top: 40px;
+        left:10px;  
+    }
+    .tokko{
+        display: block;
+        
+        height: 250px;
+       
+        left: 50px;
+    }
+    button{
+        display: flex;
+        justify-content: left;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    span{
+        justify-content: left;
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .reset{
+        background-color: red;
+        color: white;
+        height: 50px;
+        width:200px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .submit{
+        background-color: green;
+        height: 50px;
+        width:200px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+        <body>
+         <header><h1>Exam Section</h1></header>
+         <label class="name" for="name">Name:</label>
+    <input class="input1" type="text" id="name" placeholder="Enter Your Name">
+    <br>
+    <label class="department" for="department">Department:</label>
+    <input class="input2" type="text" id="department" placeholder="Enter Your Department">
+    <br>
+         
+      <span>1.what will be the output of the following program</span>  
+    <img class="tokko" src="gaaffii1.png">
+     <br>
+       <button onclick=" wrong += 1">A. c is a posetive number <br>
+c is a positive number</button> <button onclick=" right += 1">B. c is a negative number <br>
+c is a positive number</button> <button onclick=" wrong += 1">C.c is a negative number <br>
+c is a negative number</button><button onclick=" wrong += 1">D.none</button> <br>
+      <span>2.what will be the output of the following program</span>  
+      <img class="tokko" src="gaaffii2.png">  <br>
+       <button onclick=" wrong += 1">A. var2 contains var2 / 2: 512</button> <button onclick=" wrong += 1">B. var1 contains var2 / 2: 512</button> <button onclick=" wrong += 1">C. var2 contains var1 / 1: 012</button><button onclick=" right += 1">D. var2 contains var1 / 2: 512</button> <br>
+        <span>3. what is a place where the program stores data temporarily. </span>
+       <button onclick=" wrong += 1">A. method</button> <button onclick=" wrong += 1">B. object</button> <button onclick=" wrong += 1">C. function</button><button onclick=" right += 1">D. variable</button> <br>
+        <span>4. which one is used to simplify the reality and used to focus only data and process relevant to application being built</span>
+       <button onclick=" right += 1">A. abstraction</button> <button onclick=" wrong += 1">B. encapsulation</button> <button onclick=" wrong += 1">C. polymorphism</button><button onclick=" wrong += 1">D. enheritance</button> <br>
+        <span>5. which statement is correct</span>
+       <button onclick=" wrong += 1">A.a function is a template for an object, and an object is an instance of a class</button> <button onclick=" wrong += 1">B.a class is a template for an function, and an function is an instance of a class</button> <button onclick=" right += 1">C.a class is a template for an object, and an object is an instance of a class</button><button onclick=" wrong += 1">D.a object is a template for an object, and an object is an instance of a class</button> <br>
+        <span> 6.what is the output of the following program</span> <br>
+        <img class="tokko" src="gaaffii4.png"><br>
+       <button onclick=" wrong += 1">A. x and y: 10 20 <br>
+        y is 40</button>
+         <button onclick=" right += 1">B.x and y: 10 20 <br>
+        x is 40</button>
+         <button onclick=" wrong += 1">C. y and x: 10 20 <br>
+            x is 40</button>
+            <button onclick=" wrong += 1">D. y and y: 10 20 <br>
+                x is 40</button> <br>
+                <span> 7.what is the output of the following program</span> <br>
+                <img class="tokko" src="gaaffii5.png"> <br>
+       <button onclick=" right += 1">A.
+        This is count: 0 <br>
+This is count: 1 <br>
+This is count: 2 <br>
+This is count: 3 <br>
+This is count: 4 <br>
+Done!
+       </button> <button onclick=" wrong += 1">B.
+        This is count: 0 <br>
+This is count: 1 <br>
+This is count: 3 <br>
+This is count: 4<br>
+This is count: 5<br>
+Done!
+       </button> <button onclick=" wrong += 1">C.
+        This is count: 0 <br>
+This is count: 4 <br>
+This is count: 3 <br>
+This is count: 2 <br>
+This is count: 1 <br>
+Done!
+       </button><button onclick=" wrong += 1">D.none</button> <br>
+        <span>8. which one is true about OOP with respect to procedural programming</span><br>
+       <button onclick=" wrong += 1">A. devided into functions</button>
+        <button onclick=" wrong += 1">B. top buttom approach</button> 
+        <button onclick=" right += 1">C. supports overloading</button>
+        <button onclick=" wrong += 1">D. less secure</button>  <br>
+        <span>9. which one is parent- child relationship</span> <br>
+        <button onclick=" right += 1">A.enheritance</button>
+        <button onclick=" wrong += 1">B. encapsulation</button>
+        <button onclick=" wrong += 1">C. polimorphism</button>
+        <button onclick=" wrong += 1">D. abstraction</button>
+        <span>10. what is the name of operator &&</span>
+        <button onclick=" right += 1">A. AND</button>
+        <button onclick=" wrong += 1">B OR.</button>
+        <button onclick=" wrong += 1">C. NOR</button>
+        <button onclick=" wrong += 1">D. XOR</button>
+         </ol>
+    <button class="reset" onclick=" right = 0, wrong = 0">reset</button>
+    <button class="submit" onclick="evaluateExam()">Submit Exam</button>
+
+    <div id="result"></div>
+
+            <script>
+                var right = 0;
+                var wrong = 0;
+              var courseName = "";
+              function evaluateExam() {
+                  var name = document.getElementById("name").value;
+                  var department = document.getElementById("department").value;
+      
+                  // Perform exam evaluation logic (you can customize this)
+                  var score = right; // Random score for demonstration
+                  var passMark = 5; // Set your pass mark
+                  var percent= (100*right)/10
+      
+                  var resultText = `Dear ${name} from ${department}, your exam score is ${score}. which is ${percent}% `;
+                  
+                  if (score >= passMark) {
+                      resultText += "Congratulations! You have passed the exam.";
+                  } else {
+                      resultText += "Unfortunately, you did not pass the exam. Better luck next time.";
+                  }
+                   
+                  document.getElementById("result").innerHTML = resultText;
+              }
+              
+            </script>
+        </body>
+</html>
